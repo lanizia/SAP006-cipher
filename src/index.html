@@ -6,9 +6,34 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="root">
-    <h1>Hello world!</h1>
+  
+  <header>
+    <div id="root">
+      <h1>POSITIVE WORDS!</h1>
+      <h2>Canal para você criptografar palavras positivas e animar o dia das suas amigas da SAP006!</h2>
+    </div>
+  </header>
+  
+<section>
+
+  <div class="key">
+    <input type="text" id="chave" name="chave" value="Insira a chave da sua cifra">
   </div>
+
+  <div class="palavra">
+  <input type="text" id="palavra" name="palavra" value="Positive Word">
+  <button onClick="criptografar()">Criptografar</button>
+  <button onClick="descriptografar()">Descriptografar</button>
+  </div>
+
+</section>
+
+
+<footer>Atenção! Serão consideradas apenas letras maiúsculas, não admitindo uso de caracteres especiais! Divirtam-se</footer>
+
+
+
+
   <script src="index.js" type="module"></script>
 </body>
 </html>
