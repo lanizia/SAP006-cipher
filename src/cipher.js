@@ -5,7 +5,7 @@ encode: function(offset, word) {
   for(let i = 0; i < word.length; i++) {
     const letter = word[i];
     const letterCode = letter.charCodeAt();
-    const newLetterCode = String.fromCharCode(((letterCode + 65 + offset) % 26 - 65));
+    const newLetterCode = String.fromCharCode(((letterCode - 65 + offset) % 26 + 65));
     wordCripto += newLetterCode
   }
   return wordCripto
