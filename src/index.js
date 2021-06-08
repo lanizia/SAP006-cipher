@@ -1,24 +1,24 @@
 import cipher from './cipher.js';
 
-function criptografar () {
-    let offsetInput = document.querySelector("#chave");
+function onEncrypt () {
+    let offsetInput = document.querySelector("#keyInput");
     let offset = parseInt(offsetInput.value);
-    let wordInput = document.querySelector("#palavra");
+    let wordInput = document.querySelector("#textInput");
     let word = wordInput.value;
     wordInput.value = cipher.encode(offset, word);
 }
-let botaoCriptografar = document.querySelector("#criptografar");
-botaoCriptografar.addEventListener("click", criptografar);
+let btnEncrypt = document.querySelector("#encrypt");
+btnEncrypt.addEventListener("click", onEncrypt);
 
-function descriptografar () {
-    let offsetInput = document.querySelector("#chave");
+function onDecrypt () {
+    let offsetInput = document.querySelector("#keyInput");
     let offset = parseInt(offsetInput.value);
-    let wordInput = document.querySelector("#palavra");
+    let wordInput = document.querySelector("#textInput");
     let word = wordInput.value;
     wordInput.value = cipher.decode(offset, word);
 }
-let botaoDescriptografar = document.querySelector("#descriptografar");
-botaoDescriptografar.addEventListener("click", descriptografar);
+let btnDecrypt = document.querySelector("#decrypt");
+btnDecrypt.addEventListener("click", onDecrypt);
 
 
 

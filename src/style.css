@@ -25,17 +25,17 @@ h2 {
     padding: 10px 15px;
   }
 
-  .palavra {
+  .message {
     margin: 0 0 15px;
   }
   
-  .palavra input {
+  .message input {
     display: block;
     margin: 0 auto;
     padding: 10px 15px;
   }
   
-  .palavra button {
+  .message button {
     border: 0;
     color: #ffffff;
     background: #2c3b6e;
@@ -48,6 +48,6 @@ h2 {
     transition: .3s;
   }
   
-  .palavra button:hover {
+  .message button:hover {
     opacity:.8;
   }
