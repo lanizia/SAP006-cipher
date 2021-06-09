@@ -18,17 +18,18 @@ btnEncrypt.addEventListener("click", onEncrypt);
 function onDecrypt () {
     const offset = parseInt(offsetInput.value);
     const word = wordInput.value;
-    result.innerHTML = cipher.decode(offset, word);
+    wordInput.value = "";
+    result.innerHTML += cipher.decode(offset, word);
 }
 
 btnDecrypt.addEventListener("click", onDecrypt);
 
-// Função para manter as letras maíusculas
-function onKeyUp (event) {
-    event.target.value = event.target.value.toUpperCase()
-}
+// Função para manter as letras maíusculas (descomentar para implementar a função.)
+// function onKeyUp (event) {
+//     event.target.value = event.target.value.toUpperCase()
+// }
 
-wordInput.addEventListener("keyup", onKeyUp);
+// wordInput.addEventListener("keyup", onKeyUp);
 
 
 
