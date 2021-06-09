@@ -1,20 +1,18 @@
 
 const cipher = {
-encode: function(offset, word) {
+encode: function(offset, string) {
   let wordCripto = "";
-  for(let i = 0; i < word.length; i++) {
-    const letter = word[i];
-    const letterCode = letter.charCodeAt();
+  for(let i = 0; i < string.length; i++) {
+    const letterCode = string.charCodeAt(i);
     const newLetterCode = String.fromCharCode(((letterCode - 65 + offset) % 26 + 65));
-    wordCripto += newLetterCode
+    wordCripto += newLetterCode;
   }
   return wordCripto
 },
-decode: function (offset, word) {
+decode: function (offset, string) {
   let wordDecripto = "";
-  for(let i = 0; i < word.length; i++) {
-    const letter = word[i];
-    const letterCode = letter.charCodeAt();
+  for(let i = 0; i < string.length; i++) {
+    const letterCode = string.charCodeAt(i);
     const newLetterCode = String.fromCharCode(((letterCode - 90 - offset) % 26 + 90));
     wordDecripto += newLetterCode;
   }

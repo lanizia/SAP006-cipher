@@ -1,25 +1,34 @@
 import cipher from './cipher.js';
 
-function onEncrypt () {
-    let offsetInput = document.querySelector("#keyInput");
-    let offset = parseInt(offsetInput.value);
-    let wordInput = document.querySelector("#textInput");
-    let word = wordInput.value;
-    wordInput.value = cipher.encode(offset, word);
+const offsetInput = document.querySelector("#keyInput");
+const wordInput = document.querySelector("#textInput");
+const result = document.querySelector("#result");
+const btnEncrypt = document.querySelector("#encrypt");
+const btnDecrypt = document.querySelector("#decrypt");
+
+function onEncrypt () { 
+    const offset = parseInt(offsetInput.value);
+    const word = wordInput.value;
+    wordInput.value = "";
+    result.innerHTML += cipher.encode(offset, word);
 }
-let btnEncrypt = document.querySelector("#encrypt");
+
 btnEncrypt.addEventListener("click", onEncrypt);
 
 function onDecrypt () {
-    let offsetInput = document.querySelector("#keyInput");
-    let offset = parseInt(offsetInput.value);
-    let wordInput = document.querySelector("#textInput");
-    let word = wordInput.value;
-    wordInput.value = cipher.decode(offset, word);
+    const offset = parseInt(offsetInput.value);
+    const word = wordInput.value;
+    result.innerHTML = cipher.decode(offset, word);
 }
-let btnDecrypt = document.querySelector("#decrypt");
+
 btnDecrypt.addEventListener("click", onDecrypt);
 
+// Função para manter as letras maíusculas
+function onKeyUp (event) {
+    event.target.value = event.target.value.toUpperCase()
+}
+
+wordInput.addEventListener("keyup", onKeyUp);
 
 
 
@@ -29,6 +38,8 @@ btnDecrypt.addEventListener("click", onDecrypt);
 
 
 
+
+// testes
 // console.log(cipher.encode(3, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'));
 // console.log(cipher.decode(3, 'HIJKLMNOPQRSTUVWXYZABCDEFG'));
 
