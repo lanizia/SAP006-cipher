@@ -10,7 +10,7 @@ function onEncrypt () {
     const offset = parseInt(offsetInput.value);
     const word = wordInput.value;
     wordInput.value = "";
-    result.innerHTML += cipher.encode(offset, word);
+    result.value = cipher.encode(offset, word);
 }
 
 btnEncrypt.addEventListener("click", onEncrypt);
@@ -19,7 +19,7 @@ function onDecrypt () {
     const offset = parseInt(offsetInput.value);
     const word = wordInput.value;
     wordInput.value = "";
-    result.innerHTML += cipher.decode(offset, word);
+    result.value = cipher.decode(offset, word);
 }
 
 btnDecrypt.addEventListener("click", onDecrypt);

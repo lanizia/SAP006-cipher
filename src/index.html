@@ -10,31 +10,48 @@
   <header>
     <div id="root">
       <h1>MAGIC WORDS!</h1>
-        <h2>Canal para você criptografar palavras positivas e animar o dia das suas amigas da SAP006!</h2>
     </div>
- </header>
+  </header>
+
+  <section>
+    <div class= "columns">
+
+      <div class="column">
+         <img src="./imagem/gato2.jpg" alt="">
+      </div>
   
-<section>
-  <div class="key">
-    <input type="number" id="keyInput" name="keyInput" placeholder="Insira a chave da sua cifra">
-  </div>
+     <div class="column">
+          <div class="instructions">
+            <p>Passo 1 -  Escolha um número de chave para sua senha.<br /> Passo 2 - Escolha uma palavra para ser códificada ou decodificada.<br /> Passo 3 - Clique em criptografar ou descriptografar!</p>  
+          </div>
+  
+          <div class="input-area">
+            <label for="keyInput">Insira aqui a chave da sua senha</label>
+            <input type="number" id="keyInput" name="keyInput">
+            </div>
+  
+          <div class="input-area">
+            <label for="textInput">Digite aqui a palavra escolhida</label>
+            <input type="text" id="textInput" name="textInput">
+            </div>
+  
+          <div class="input-area">
+            <label for="result">Sua senha é:</label>
+            <input type="text" readonly id="result" name="result">
+          </div>
 
-  <div class="message">
-    <input type="text" id="textInput" name="textInput" placeholder="Positive Word">
-    <p id="result">Sua palavra criptografada é </p>
-
-       <button id ="encrypt">Criptografar</button>
-       <button id ="decrypt">Descriptografar</button>
-  </div>
-
-</section>
-
-
-
-<footer>Atenção! Serão consideradas apenas letras maiúsculas, não sendo admitido o uso de caracteres especiais ou "ç"! Divirtam-se!</footer>
-
-
-
+          <div class="buttons">
+            <button id ="encrypt">Criptografar</button>
+            <button id ="decrypt">Descriptografar</button>
+          </div>
+      </div>
+  
+      <div class="column">
+          <img src="./imagem/gato2.jpg" alt="">
+      </div>
+  
+    </div>
+  </section>
 
   <script src="index.js" type="module"></script>
 </body>

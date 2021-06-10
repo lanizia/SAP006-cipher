@@ -5,15 +5,15 @@ const cipher = {
 encode: function encrypt (offset, string) {
   let stringCripto = "";
   for(let i = 0; i < string.length; i++) {
-    const letterCode = string.charCodeAt(i);
+    let letterCode = string.charCodeAt(i);
+
     if(letterCode >= 65 && letterCode <= 90 ) {
-      const newLetterCode = String.fromCharCode(((letterCode - 65 + offset) % 26 + 65));
-      stringCripto += newLetterCode;
+      letterCode = ((letterCode - 65 + offset) % 26 + 65);
     }
     if(letterCode >= 97 && letterCode <= 122 ) {
-      const newLetterCode = String.fromCharCode(((letterCode - 97 + offset) % 26 + 97));
-      stringCripto += newLetterCode;
+      letterCode = ((letterCode - 97 + offset) % 26 + 97);
     }
+    stringCripto += String.fromCharCode(letterCode);
     
   }
   return stringCripto
@@ -21,16 +21,15 @@ encode: function encrypt (offset, string) {
 decode: function decrypt (offset, string) {
   let stringDecripto = "";
   for(let i = 0; i < string.length; i++) {
-    const letterCode = string.charCodeAt(i);
+    let letterCode = string.charCodeAt(i);
     
     if(letterCode >= 65 && letterCode <= 90){
-      const newLetterCode = String.fromCharCode(((letterCode - 90 - offset) % 26 + 90));
-      stringDecripto += newLetterCode;
+      letterCode = ((letterCode - 90 - offset) % 26 + 90);
     }
     if(letterCode >= 97 && letterCode <= 122) {
-      const newLetterCode = String.fromCharCode(((letterCode - 122 - offset) % 26 + 122));
-      stringDecripto += newLetterCode;
+      letterCode = ((letterCode - 122 - offset) % 26 + 122);
     }
+    stringDecripto += String.fromCharCode(letterCode)
   }
   return stringDecripto
 }
