@@ -9,12 +9,20 @@ h1 {
     color: #faf8f9;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000;
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
     width: 250px;
     margin: 18px auto;
     border-radius: 15px;
     padding: 20px;
+}
+
+h2 {
+     color: #faf8f9;
+     font-size: 35px;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: #000;
+     text-align: center;
 }
 
 .columns {
