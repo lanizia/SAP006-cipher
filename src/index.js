@@ -24,25 +24,7 @@ function onDecrypt () {
 
 btnDecrypt.addEventListener("click", onDecrypt);
 
-// Função para manter as letras maíusculas (descomentar para implementar a função.)
-// function onKeyUp (event) {
-//     event.target.value = event.target.value.toUpperCase()
-// }
 
-// wordInput.addEventListener("keyup", onKeyUp);
-
-
-
-
-
-
-
-
-
-
-// testes
-// console.log(cipher.encode(3, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'));
-// console.log(cipher.decode(3, 'HIJKLMNOPQRSTUVWXYZABCDEFG'));
 
 
 
