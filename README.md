@@ -8,11 +8,6 @@
 * [4. Considerações gerais](#4-considerações-gerais)
 * [5. Critérios de aceitação mínimos do
   projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Considerações técnicas](#7-considerações-técnicas)
-* [8. Guias, dicas e leituras
-  complementares](#8-guias-dicas-e-leituras-complementares)
-* [9. Checklist](#9-checklist)
 
 ***
 
@@ -107,7 +102,7 @@ JavaScript como ferramentas.
 O projeto utiliza o alfabeto simples (sem ç).
 Aceita o uso de letras maiúsculas e minúsculas sem acentuação.
 
-### 6. Definição do produto
+## 6. Definição do produto
 
 O produto foi desenvolvido para todo e qualquer usuário que tenha interesse em 
 tornar suas palavras favoritas em senhas seguras.
