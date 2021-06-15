@@ -6,8 +6,7 @@
 * [2. Resumo do projeto](#2-resumo-do-projeto)
 * [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
 * [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do
-  projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
+* [5. Critérios do projeto](#5-critérios-do-projeto)
 
 ***
 
@@ -41,15 +40,12 @@ a cifra de Vigenère, e tem aplicação no sistema ROT13.
 ## 2. Resumo do projeto
 
 Neste projeto criei minha primeira aplicação web no _bootcamp_ da Laboratória.
-Nela o usuário poderá cifrar e decifrar palavras para serem utilizadas como senhas,
-bastando indicar a chave de deslocamento (_offset_).
-O desenho do projeto foi definido de forma que trouxesse simplicidade e clareza para o usuário.
+Nela o usuário poderá cifrar e decifrar palavras para serem utilizadas como senhas, bastando indicar a chave de deslocamento (_offset_).
+O desenho do projeto foi definido de forma que trouxesse simplicidade e clareza para o usuário e a codificação das letras é baseada nas instruções da tabela ASCII.
 
 ## 3. Objetivos de aprendizagem
 
-Neste projeto aprendi a construir uma aplicação web (_WebApp_) que
-interage com o usuário final através do navegador utilizando HTML, CSS e
-JavaScript como ferramentas.
+Neste projeto aprendi a construir uma aplicação web (_WebApp_) que interage com o usuário final através do navegador utilizando HTML, CSS e JavaScript como ferramentas.
 
 ### HTML e CSS
 
@@ -99,15 +95,14 @@ JavaScript como ferramentas.
 
 ## 5. Critérios do projeto
 
-O projeto utiliza o alfabeto simples (sem ç).
-Aceita o uso de letras maiúsculas e minúsculas sem acentuação.
+O projeto utiliza o alfabeto, incluindo letras maiúsculas, minúsculas, acentos e caracteres especiais.
+É permitido ainda ao usuário a inserção de deslocamento negativo.
 
 ## 6. Definição do produto
 
-O produto foi desenvolvido para todo e qualquer usuário que tenha interesse em 
-tornar suas palavras favoritas em senhas seguras.
-A aplicação além de ser divertida, possibilita ao usuários a experiência de criação
-de senhas códificadas para uso em seus aplicativos, dispositivos móveis, acessos de contas, etc... 
+O produto foi desenvolvido para todo e qualquer usuário que tenha interesse em  tornar suas palavras favoritas em senhas seguras.
+A aplicação além de ser divertida, possibilita ao usuários a experiência de criação de senhas códificadas para uso em seus aplicativos, 
+dispositivos móveis, acessos de contas, etc... 
 Impedindo assim, que terceiros não autorizados acessem com facilidade seus dados.
 
 ### Interface do usuário (UI)
@@ -115,7 +110,7 @@ Impedindo assim, que terceiros não autorizados acessem com facilidade seus dado
 A interface da aplicação permite ao usuário
 
 * Eleger um _offset_ indicando quantas posições de deslocamento de caracteres
-  quer que a cifra utilize.
+  quer que a cifra utilize (podendo ser números negativos ou positivos).
 * Inserir uma mensagem (texto) para ser cifrada.
 * Ver o resultado da mensagem cifrada.
 * Inserir uma mensagem (texto) para ser decifrada.
