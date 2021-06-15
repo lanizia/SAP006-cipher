@@ -1,0 +1,83 @@
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9c758;
+}
+
+h1 {
+  color: #faf8f9;
+  font-size: 70px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  text-align: center;
+  width: 250px;
+  margin: 18px auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #080406;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+}
+
+.columns .column {
+  flex: 1;
+}
+
+.instructions {
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 31px;
+  width: 560px;
+  margin: 6px 28px;
+}
+
+.input-area {
+  margin: 0 0 15px;
+  box-sizing: border-box;
+}
+
+input {
+  display: block;
+  margin: 11px auto 20px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  outline: none;
+  border: 2px solid black;
+  width: 225px;
+}
+
+input:focus {
+  border-color: tomato;
+}
+
+label {
+  font-size: 17px;
+  margin: 0 0 15px;
+  padding: 10px 15px;
+
+}
+
+.buttons button {
+  border: 0;
+  color: #ffffff;
+  background: #293c52;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.button button:hover {
+  opacity: .8;
+}
