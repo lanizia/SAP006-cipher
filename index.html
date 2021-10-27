@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Caesar Cipher</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  
-  <header>
-    <div id="root">
-      <h1>MAGIC WORDS!</h1>
-      <h2>Transforme suas palavras favoritas <br />
-         em senhas seguras!</h2>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <title>Caesar Cipher</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+        <h1 class="title">MAGIC WORDS!</h1>
+        <h2 class="sub-title">
+          Transforme suas palavras favoritas <br />
+          em senhas seguras!
+        </h2>
+    </header>
 
-  <section>
-    <div class= "columns">
+    <section>
+      <div class="columns">
+        <div class="column">
+          <img src="./imagem/gato2.jpg" alt="" />
+        </div>
 
-      <div class="column">
-         <img src="./imagem/gato2.jpg" alt="">
-      </div>
-  
-     <div class="column">
+        <div class="column">
           <div class="instructions">
-            <p>Passo 1 -  Escolha um número de chave para sua senha.<br /> Passo 2 - Escolha uma palavra para ser códificada ou decodificada.<br /> Passo 3 - Clique em criptografar ou descriptografar!</p>  
+            <p>
+              Passo 1 - Escolha um número de chave para sua senha.<br />
+              Passo 2 - Escolha uma palavra para ser códificada ou
+              decodificada.<br />
+              Passo 3 - Clique em criptografar ou descriptografar!
+            </p>
           </div>
-  
+
           <div class="input-area">
-            <label for="keyInput">Insira aqui a chave da sua senha</label>
-            <input type="number" id="keyInput" name="keyInput">
-            </div>
-  
+            <label class="labels">Insira aqui a chave da sua senha</label>
+            <input type="number" min="0" id="keyInput" class="input-text" />
+          </div>
+
           <div class="input-area">
-            <label for="textInput">Digite aqui a palavra escolhida</label>
-            <input type="text" id="textInput" name="textInput">
-            </div>
-  
+            <label class="labels" >Digite a palavra escolhida</label>
+            <input type="text" id="textInput" class="input-text" />
+          </div>
+
           <div class="input-area">
-            <label for="result">Sua senha é:</label>
-            <input type="text" readonly id="result" name="result">
+            <label class="labels">Sua senha é:</label>
+            <textarea class="text-result" id="result" readonly cols="30" rows="3"></textarea>
           </div>
 
           <div class="buttons">
-            <button id ="encrypt">Criptografar</button>
-            <button id ="decrypt">Descriptografar</button>
+            <button id="encrypt">Criptografar</button>
+            <button id="decrypt">Descriptografar</button>
           </div>
-      </div>
-  
-      <div class="column">
-          <img src="./imagem/gato2.jpg" alt="">
-      </div>
-  
-    </div>
-  </section>
+        </div>
 
-  <script src="index.js" type="module"></script>
-</body>
+        <div class="column">
+          <img src="./imagem/gato2.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
